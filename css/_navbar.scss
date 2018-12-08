@@ -1,0 +1,42 @@
+@import "variables";
+
+.nav {
+  background: transparent;
+  .nav-t {
+    background: transparent;
+    border-color: $pink;
+    i {
+      color: $pink;
+    }
+  }
+  .nav-c {
+    background: $black;
+    .item > a {
+      color: $pink;
+      font-family: $font;
+    }
+    .close > i {
+      color: $pink;
+    }
+  }
+}
+
+@media only screen and (min-width: 436px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    .nav-c {
+      background: transparent;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}

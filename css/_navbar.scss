@@ -1,22 +1,24 @@
 @import "variables";
 
 .nav {
-  background: transparent;
+  background: $black;
+  transition: all .5s;
   .nav-t {
     background: transparent;
-    border-color: $pink;
+    border-color: $white;
     i {
-      color: $pink;
+      color: $white;
     }
   }
   .nav-c {
     background: $black;
+    transition: all .5s;
     .item > a {
-      color: $pink;
+      color: $white;
       font-family: $pfont;
-      &:hover {
-        color: $dpink;
-      }
+    }
+    .item.active a {
+      color: $pink;
     }
     .close > i {
       color: $pink;
@@ -34,6 +36,7 @@
 
 @media only screen and (min-width: 768px) {
   .nav {
+    background: transparent;
     .nav-c {
       background: transparent;
     }

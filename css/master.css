@@ -7,10 +7,7 @@
 .nav {
   background: #1f1f1f;
   -webkit-transition: all .5s;
-  transition: all .5s;
-  height: 11vh;
-  max-height: 100px;
-  min-height: 75px; }
+  transition: all .5s; }
   .nav .nav-t {
     background: transparent;
     border-color: whitesmoke; }
@@ -28,9 +25,6 @@
     .nav .nav-c .close > i {
       color: #ff8672; }
 
-@media only screen and (max-width: 436px) {
-  .nav > .nav-t {
-    padding: 2.2%; } }
 @media only screen and (min-width: 768px) {
   .nav {
     background: transparent; }

@@ -30,7 +30,17 @@
 }
 
 @media only screen and (min-width: 768px) {
-
+  .landing {
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    a i {
+      margin-top: 20%;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {

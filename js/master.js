@@ -9,12 +9,22 @@ var dropSpeed = 400;
 
 //Sliding animation time
 
+//Change nav color
+function changeNavbarTheme() {
+  var top = $(window).scrollTop();
+  if(top > 0) {
+    $('.nav').css('backgroundColor', '#1f1f1f');
+    $('.nav-c').css('backgroundColor', '#1f1f1f');
+  } else {
+    $('.nav').css('backgroundColor', 'transparent');
+    $('.nav-c').css('backgroundColor', 'transparent');
+  }
+};
 
-//Dont mind the repetition of the images in the navchange im just lazy
 $(document).ready(function() {
-  navChange('#navchange', 'img/logo.png', 'img/logo.png');
+
 });
 
 $(document).scroll(function() {
-  navChange('#navchange', 'img/logo.png', 'img/logo.png');
+
 });

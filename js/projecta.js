@@ -6,7 +6,6 @@ var itemWidth;
 var navWidth;
 var w = window.innerWidth;
 var itemDefault = false;
-var mobile = false;
 
 //-------------------- Editable JS Variables for External Use ---------------------------
 var navItemWidth = 80;
@@ -26,8 +25,10 @@ function countFunc() {
 //--------------- Test for if the user is on a mobile device -----------
 function isMobile() {
   if(/webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (/Android/i.test(navigator.userAgent) && w <= 768)) {
-    mobile = true;
- };
+    return true;
+  } else {
+    return false;
+  };
 };
 
 //------------ Calculate Navbar Width ---------
@@ -223,19 +224,19 @@ function dropClose() {
 };
 
 function dropdown(element) {
-    var clicked = $(element).parent().children('.dropdown');
-    var clickedChildren = clicked.find('.dropdown');
-    var siblings = clicked.parent().siblings().find('.dropdown');
-    var mainDrop;
-    if(w > 767) {
-      mainDrop = 0;
-    } else {
-      mainDrop = dropSpeed;
-    };
-    siblings.slideUp(mainDrop);
-    clicked.slideToggle(mainDrop, function() {
+  var clicked = $(element).parent().children('.dropdown');
+  var clickedChildren = clicked.find('.dropdown');
+  var siblings = clicked.parent().siblings().find('.dropdown');
+  var mainDrop;
+  if(w > 767) {
+    mainDrop = 0;
+  } else {
+    mainDrop = dropSpeed;
+  };
+  siblings.slideUp(mainDrop);
+  clicked.slideToggle(mainDrop, function() {
     clickedChildren.slideUp();
-    });
+  });
 };
 
 //------------- Landing Page --------------
@@ -255,7 +256,7 @@ function landing() {
 
 //------------------- Parallax --------------
 function parallax() {
-  if(mobile === false) {
+  if(!(isMobile())) {
     $('.parallax').each(function() {
       var top = $(window).scrollTop();
       var offsetTop = $(this).offset().top;
@@ -290,8 +291,8 @@ function active() {
       $(this).addClass('active');
     };
   }, function() {
-      $(this).removeClass('active');
-      element.addClass('active');
+    $(this).removeClass('active');
+    element.addClass('active');
   });
 };
 
@@ -390,7 +391,7 @@ $(document).ready(function() {
     console.log(this);
     var keyCode = (event.keyCode ? event.keyCode : event.which);
     if (keyCode == 13) {
-        dropdown(this);
+      dropdown(this);
     }
   });
 

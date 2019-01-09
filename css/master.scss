@@ -5,5 +5,12 @@
   box-sizing: border-box;
 }
 
+.fade-down {
+  opacity: 0;
+  transition: all 1.5s;
+  position: relative;
+  top: -100px;
+}
+
 @import "navbar";
 @import "landing";

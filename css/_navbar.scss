@@ -15,7 +15,7 @@
     transition: all .5s;
     .item > a {
       color: $white;
-      font-size: 18px;
+      font-size: 20px;
       font-family: $pfont;
     }
     .item.active a {
@@ -45,9 +45,5 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .nav-c {
-    .item > a {
-      font-size: 20px;
-    }
-  }
+  
 }

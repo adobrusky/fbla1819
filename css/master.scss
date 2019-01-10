@@ -12,5 +12,33 @@
   top: -100px;
 }
 
+.heading {
+  text-align: center;
+  color: $black;
+  font-size: 40px;
+  font-family: $sfont;
+}
+
+#services {
+  background-color: $white;
+  .service {
+    margin: 10% 5% 0% 5%;
+    background-color: $white;
+    width: 100px;
+    text-align: center;
+    border: 1px solid $lpink;
+    p {
+      padding: 10px;
+    }
+    .service-title {
+      color: $black;
+      background-color: $lpink;
+      i {
+        color: $black;
+      }
+    }
+  }
+}
+
 @import "navbar";
 @import "landing";

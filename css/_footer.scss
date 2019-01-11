@@ -1,0 +1,13 @@
+@import "variables";
+.footer {
+  background-color: $black;
+  border-bottom: 10px solid $pink;
+  height: 3%;
+  .info {
+    color: $white;
+    div > h1 {
+      font-size: 20px;
+      font-family: $sfont;
+    }
+  }
+}

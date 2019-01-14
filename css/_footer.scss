@@ -1,13 +1,63 @@
 @import "variables";
 .footer {
-  background-color: $black;
-  border-bottom: 10px solid $pink;
+  background-color: $dblue;
   height: 3%;
+  padding: 10px;
   .info {
     color: $white;
-    div > h1 {
+    display: flex;
+    & > div {
+      flex-direction: row;
+      display: flex;
+      margin: 5px;
+      i {
+        margin-right: 10px;
+      }
+      h1 {
+        font-size: 20px;
+        font-family: $sfont;
+      }
+      h3 {
+        font-size: 15px;
+        font-family: $sfont;
+      }
+    }
+  }
+  .about {
+    color: white;
+    h3 {
       font-size: 20px;
       font-family: $sfont;
     }
+    p {
+      font-family: $sfont;
+    }
   }
+  .divider {
+    color: white;
+    width: 60%;
+    margin: 10px auto 10px auto;
+  }
+}
+
+@media only screen and (min-width: 436px) {
+  .info {
+    width: 50%;
+  }
+  
+  .divider {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+
 }

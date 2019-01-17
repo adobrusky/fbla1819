@@ -1,20 +1,23 @@
 @import "variables";
 
 .landing {
+  padding-top: 15%;
   font-family: $sfont;
   text-align: center;
   h1 {
     color: $white;
+    font-family: $sfont;
     font-size: 30px;
   }
   h3 {
     color:$white;
     font-style: italic;
+    font-family: $sfont;
     font-size: 15px;
   }
   a i {
     color: $white;
-    margin-top: 20%;
+    margin-top: 30%;
     border-radius: 999px 999px;
     padding: 5px 10px 5px 10px;
     border: 1px solid $white;
@@ -31,18 +34,30 @@
 
 @media only screen and (min-width: 768px) {
   .landing {
+      padding-top: 10%;
     h1 {
-      font-size: 30px;
+      font-size: 35px;
     }
     h3 {
       font-size: 15px;
     }
     a i {
-      margin-top: 20%;
+      margin-top: 25%;
     }
   }
 }
 
 @media only screen and (min-width: 1024px) {
-
-}
+    .landing {
+      padding-top: 10%;
+      h1 {
+        font-size: 35px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      a i {
+        margin-top: 55%;
+      }
+    }
+  }

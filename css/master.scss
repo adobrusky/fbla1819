@@ -21,9 +21,12 @@
 
 #services {
   background-color: $white;
+  .row-m {
+    justify-content: center;
+  }
   .service {
     margin: 10% 5% 0% 5%;
-    width: 100px;
+    max-width: 300px;
     text-align: center;
     .service-title {
       color: $black;
@@ -45,9 +48,74 @@
       }
     }
     .service-list {
-      
+      border-top: 1px;
+      border-right: 1px;
+      border-left: 1px;
+      border-bottom: 1px;
+      border-style: solid;
+      border-color: $grey;
     }
   }
+}
+
+.overview {
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  h1 {
+    font-size: 30px;
+    font-family: $sfont;
+    color: $white;
+  }
+  p {
+    font-size: 20px;
+    font-family: $sfont;
+    color: $grey;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 436px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  #services {
+    .row-m .col-3 {
+      flex-basis: 30%;
+      &:nth-child(2) {
+        transform: scale(1.05);
+      }
+    }
+    .service {
+      margin: 5% 1% 5% 1%;
+      max-width: 300px;
+      .service-title {
+        padding: 30px;
+        h1 {
+          font-size: 25px;
+        }
+        h4 {
+          span:first-child {
+            font-size: 25px;
+          }
+          span {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
 }
 
 @import "navbar";

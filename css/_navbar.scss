@@ -3,6 +3,7 @@
 .nav {
   background: $black;
   transition: all .5s;
+  max-height: 75px;
   .nav-t {
     background: transparent;
     border-color: $white;
@@ -45,5 +46,5 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  
+
 }

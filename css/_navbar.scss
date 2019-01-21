@@ -4,8 +4,12 @@
   background: $black;
   transition: all .5s;
   max-height: 75px;
+  .brand {
+      margin-left: 15px;
+  }
   .nav-t {
     background: transparent;
+    padding: 7px;
     border-color: $white;
     i {
       color: $white;

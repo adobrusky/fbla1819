@@ -14,14 +14,14 @@ function fadeDown() {
 
 //Change nav color. i could probably do this much better but oh well
 function changeNavbarTheme() {
-  var top = $(window).scrollTop();
-  if((top > 0 && w >= 768) || w <= 768) {
-    $('.nav').css('backgroundColor', '#1f1f1f');
-    $('.nav-c').css('backgroundColor', '#1f1f1f');
-  } else {
-    $('.nav').css('backgroundColor', 'transparent');
-    $('.nav-c').css('backgroundColor', 'transparent');
-  };
+    var top = $(window).scrollTop();
+    if((top > 0 && w >= 768) || w <= 768) {
+      $('.nav').css('backgroundColor', '#1f1f1f');
+      $('.nav-c').css('backgroundColor', '#1f1f1f');
+    } else {
+      $('.nav').css('backgroundColor', 'transparent');
+      $('.nav-c').css('backgroundColor', 'transparent');
+    };
 };
 
 $(document).ready(function() {

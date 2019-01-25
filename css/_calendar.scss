@@ -1,0 +1,11 @@
+@import "variables";
+
+.calendar {
+  background-color: $white;
+  padding: 20px;
+  h1, h3 {
+    font-family: $sfont;
+    text-align: center;
+    color: $black;
+  }
+}

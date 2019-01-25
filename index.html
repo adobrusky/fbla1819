@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans+Narrow" rel="stylesheet">
   <link rel="stylesheet" href="css/projecta.css">
   <link rel="stylesheet" href="css/master.css">
-  <title>Accuracy Accounting</title>
+  <title>Accuracy Accounting | Home</title>
 </head>
 <body class="fade">
 
@@ -134,5 +134,31 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/projecta.js"></script>
   <script src="js/master.js"></script>
+  <script>
+    //Change nav color. i could probably do this much better but oh well
+    function changeNavbarTheme() {
+        var top = $(window).scrollTop();
+        if((top > 0 && w >= 768) || w <= 768) {
+          $('.nav').css('backgroundColor', '#1f1f1f');
+          $('.nav-c').css('backgroundColor', '#1f1f1f');
+        } else {
+          $('.nav').css('backgroundColor', 'transparent');
+          $('.nav-c').css('backgroundColor', 'transparent');
+        };
+    };
+
+    $(document).ready(function() {
+      changeNavbarTheme();
+      fadeDown();
+    });
+
+    $(window).scroll(function() {
+      changeNavbarTheme();
+    });
+
+    $(window).resize(function() {
+      changeNavbarTheme();
+    });
+  </script>
 </body>
 </html>

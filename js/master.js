@@ -13,18 +13,30 @@ function fadeDown() {
 };
 
 //Calendar vars
-var monthName = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"];
+var monthName = ['January', 'February', 'March', 'April', 'May', 'June',
+'July', 'August', 'September', 'October', 'November', 'December'];
+var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 var date = new Date();
-var m = date.getMonth(); //Work on this later
+var m = date.getMonth();
+var today = date.getDay();
+var j = 1;
 
-function monthChange(month, day) {
-  $('.month').html('<i class="fa fa-caret-left"></i> ' + monthName[month] + ' ' + '<i class="fa fa-caret-right"></i>');
-  $('.month > i').click(function() {
-      month = month++;
-  });
+//TODO: gonna make this super easy and just make arrays with numbers and have the table load certain arrays based on the month.
+function monthChange(month, day, weekday) {
+  $('.month').html(monthName[month]);
+  for(var i = 0; i < 6; i++) {
+    $('.days').append('<tr></tr>');
+    while(j < 32) {
+      $('.days tr:nth-child(' + (i + 2) + ')').append('<td>' + j + '</td>');
+      if((j % 7) === 0) {
+        j++;
+        break;
+      }
+      j++;
+    }
+  }
 };
 
 $(document).ready(function() {
-  monthChange(m, date.getDate());
+  monthChange(m, date.getDate(), today);
 });

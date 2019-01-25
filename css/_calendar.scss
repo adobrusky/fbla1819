@@ -3,9 +3,29 @@
 .calendar {
   background-color: $white;
   padding: 20px;
+  overflow:scroll;
   h1, h3 {
     font-family: $sfont;
     text-align: center;
     color: $black;
+  }
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .days {
+    border: 1px solid $black;
+    justify-content: center;
+    border-collapse: collapse;
+    tr > td {
+      border: 1px solid $black;
+    }
+  }
+  .week {
+    th {
+      padding: 10px;
+      border: 1px solid $black;
+    }
   }
 }

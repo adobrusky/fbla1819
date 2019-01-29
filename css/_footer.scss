@@ -34,6 +34,24 @@
       font-size: 13px;
     }
   }
+  .hours {
+    color: white;
+    h3 {
+      font-family: $sfont;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      li {
+        list-style-type: none;
+        font-size: 14px;
+        padding: 5px 5px 0px 0px;
+        flex-basis: 50%;
+        font-family: $sfont;
+      }
+    }
+  }
   .divider {
     color: white;
     width: 60%;

@@ -54,6 +54,17 @@
       border-bottom: 1px;
       border-style: solid;
       border-color: $grey;
+      padding: 10px;
+      & > ul li {
+        list-style-type: none;
+        color: $black;
+        padding: 5px;
+        font-family: $sfont;
+        &.disabled {
+          color: $dgrey;
+          text-decoration: line-through;
+        }
+      }
     }
   }
 }

@@ -74,24 +74,17 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
   h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: $sfont;
     color: $white;
   }
   p {
-    font-size: 20px;
+    font-size: 17px;
     font-family: $sfont;
     color: $grey;
     margin-top: 3%;
-  }
-}
-
-.social {
-  margin-top: 15px;
-  i {
-    margin: 0px 5px 0px 5px;
   }
 }
 
@@ -100,7 +93,9 @@
 }
 
 @media only screen and (min-width: 620px) {
-
+  .overview {
+    padding: 30px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -133,7 +128,15 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
+  .overview {
+    padding: 50px;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
 }
 
 @import "navbar";

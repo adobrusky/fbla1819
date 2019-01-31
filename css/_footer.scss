@@ -6,14 +6,10 @@
   .info {
     color: $white;
     display: flex;
-    h3 {
-      font-size: 16px;
-      font-family: $sfont;
-      text-align: left;
-    }
     & > div {
       flex-direction: row;
       display: flex;
+      margin: 5px;
       i {
         margin-right: 10px;
       }
@@ -25,49 +21,16 @@
         font-size: 13px;
         font-family: $sfont;
       }
-      div {
-        display: flex;
-        flex-direction: column;
-        h1 {
-          margin-top: 5px;
-        }
-        i {
-          padding: 36% 0% 36% 0%;
-        }
-      }
     }
   }
   .about {
     color: white;
-    text-align: center;
-    h3 {
-      font-size: 16px;
-      font-family: $sfont;
-    }
     p {
       font-family: $sfont;
-      font-size: 13px;
+      font-size: 15px;
     }
-  }
-  .hours {
-    color: white;
-    h3 {
-      font-family: $sfont;
-      text-align: center;
-    }
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0% 5% 0% 5%;
-      justify-content: space-around;
-      li {
-        list-style-type: none;
-        font-size: 14px;
-        text-align: center;
-        padding: 5px 5px 0px 0px;
-        flex-basis: 50%;
-        font-family: $sfont;
-      }
+    .social i {
+      padding: 20px 5px 0px 5px;
     }
   }
   .divider {
@@ -75,17 +38,11 @@
     width: 60%;
     margin: 10px auto 10px auto;
   }
-  .social {
-    margin-top: 15px;
-    i {
-      margin: 0px 5px 0px 5px;
-    }
-  }
 }
 
 @media only screen and (min-width: 436px) {
   .info {
-    width: 33%;
+    width: 50%;
   }
 
   .divider {

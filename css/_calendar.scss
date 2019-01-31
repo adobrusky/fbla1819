@@ -36,6 +36,17 @@
   }
   .schedule {
     margin: auto;
+    margin-top: 20px;
+    h1 {
+      font-size: 25px;
+      border-top: 1px;
+      border-right: 1px;
+      padding: 5px;
+      border-left: 1px;
+      border-bottom: 0px;
+      border-style: solid;
+      border-color: $black;
+    }
   }
   .days {
     border: 1px solid $black;
@@ -43,9 +54,10 @@
     border-collapse: collapse;
     tr > td {
       border: 1px solid $black;
-      height: 100px;
-      width: 125px;
-      vertical-align: text-top;
+      height: 15px;
+      width: 15px;
+      vertical-align: center;
+      text-align: center;
       padding: 5px;
     }
   }
@@ -55,4 +67,32 @@
       border: 1px solid $black;
     }
   }
+}
+
+@media only screen and (min-width: 436px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+  .schedule {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .calendar .days {
+    tr > td {
+      height: 75px;
+      width: 100px;
+      vertical-align: top;
+      text-align: left;
+      padding: 5px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
 }

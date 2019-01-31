@@ -24,7 +24,7 @@ var j = 1;
 //TODO: gonna make this super easy and just make arrays with numbers and have the table load certain arrays based on the month.
 function monthChange(month, day, weekday) {
   $('.month').html(monthName[month]);
-  for(var i = 0; i < 6; i++) {
+  for(var i = 0; i < 5; i++) {
     $('.days').append('<tr></tr>');
     while(j < 36) {
       $('.days tr:nth-child(' + (i + 2) + ')').append('<td>' + january[j-1] + '</td>');

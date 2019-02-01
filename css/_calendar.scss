@@ -9,6 +9,7 @@
     display: none;
     position: absolute;
     top: 0;
+    z-index: 99;
     left: 0;
     height: 100%;
     width: 100%;
@@ -17,15 +18,23 @@
       background-color: $white;
       position: relative;
       top: 25%;
+      z-index: 100;
       display: flex;
       flex-direction: column;
       margin: auto;
       padding: 10px;
       height: 50%;
-      width: 25%;
+      width: 99%;
       i {
         margin-left: auto;
-        color: $black;
+        color: $dgrey;
+      }
+      h1 {
+        font-size: 25px;
+        font-family: $sfont;
+      }
+      input {
+        width: 50px;
       }
     }
   }
@@ -94,5 +103,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
-
+  .calendar .days {
+    tr > td {
+      height: 100px;
+      width: 125px;
+    }
+  }
 }

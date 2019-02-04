@@ -19,22 +19,43 @@
       position: relative;
       top: 25%;
       z-index: 100;
+      align-items: center;
       display: flex;
       flex-direction: column;
       margin: auto;
       padding: 10px;
       height: 50%;
-      width: 99%;
+      width: 95%;
       i {
         margin-left: auto;
-        color: $dgrey;
+        color: $ddgrey;
       }
       h1 {
-        font-size: 25px;
+        font-size: 22px;
         font-family: $sfont;
+        padding: 10px 5px 10px 5px;
       }
-      input {
-        width: 50px;
+      input, select {
+        width: 50%;
+        height: 25px;
+        font-size: 17px;
+        font-family: $sfont;
+        margin: 5px;
+        border-radius: 5px 5px;
+      }
+      button {
+        font-family: $sfont;
+        background-color: $lblue;
+        color: $white;
+        padding: 10px;
+        font-size: 20px;
+        width: 50%;
+        margin-top: 25%;
+        border-radius: 5px 5px;
+      }
+      p {
+        @extend h1;
+        margin: auto;
       }
     }
   }
@@ -79,11 +100,63 @@
 }
 
 @media only screen and (min-width: 436px) {
+  .calendar > .modal {
+    .modalform {
+      top: 25%;
+      padding: 10px;
+      height: 50%;
+      width: 75%;
+      h1 {
+        font-size: 25px;
+        padding: 10px 5px 10px 5px;
+      }
+      input, select {
+        width: 50%;
+        height: 25px;
+        font-size: 17px;
+        margin: 5px;
+      }
+      button {
+        padding: 10px;
+        font-size: 20px;
+        width: 50%;
+        margin-top: 25%;
+        border-radius: 5px 5px;
+      }
+      p {
 
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 620px) {
+  .calendar > .modal {
+    .modalform {
+      height: 50%;
+      width: 450px;
+      h1 {
+        font-size: 25px;
+        padding: 10px 5px 10px 5px;
+      }
+      input, select {
+        width: 50%;
+        height: 30px;
+        font-size: 17px;
+        margin: 5px;
+      }
+      button {
+        padding: 10px;
+        font-size: 20px;
+        width: 50%;
+        margin-top: 25%;
+        border-radius: 5px 5px;
+      }
+      p {
 
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {

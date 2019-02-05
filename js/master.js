@@ -24,6 +24,7 @@ var date = new Date();
 var m = date.getMonth();
 var today = date.getDay();
 var j = 1;
+var scheduled;
 
 function monthChange(month) {
   $('.month').html(monthName[month]);
@@ -58,8 +59,11 @@ function monthChange(month) {
 
 function modal() {
   $('.days > tbody > tr > td').click(function() {
-    $('.modal').fadeIn();
-    $('body').css('overflow', 'hidden');
+    if($(this).html() !== ' ') {
+      $('.modal').fadeIn();
+      $('body').css('overflow', 'hidden');
+      scheduled = $(this);
+    }
   });
   $('.modalform i').click(function() {
      $('.modal').fadeOut();
@@ -67,7 +71,9 @@ function modal() {
 };
 
 function schedule() {
+  var selected = $('#times option:selected').text();
   $('.modalform').html('<p>Thank you for choosing Accuracy</p>');
+  scheduled.append('<div>' + selected + '</div>');
   setTimeout(function () {
     $('.modal').fadeOut();
   }, 2000);

@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-  .footer {
-    justify-content:flex-end; 
-  }
-}
-
 .fade-down {
   opacity: 0;
   transition: all 1.5s;
@@ -23,10 +17,20 @@ body {
   color: $black;
   font-size: 40px;
   font-family: $sfont;
+  margin: 20px 0px 30px 0px;
+}
+
+body {
+  background-color: $white;
+  .foot {
+    width: 100%;
+    margin-top: auto;
+    align-self: flex-end;
+    justify-content: center;
+  }
 }
 
 #services {
-  background-color: $white;
   .row-m {
     justify-content: center;
   }

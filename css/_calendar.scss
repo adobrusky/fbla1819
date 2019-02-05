@@ -1,10 +1,10 @@
 @import "variables";
 
 .calendar {
-  background-color: $white;
   padding: 20px;
   justify-content: center;
   display: flex;
+  align-items: center;
   .modal {
     display: none;
     position: absolute;
@@ -89,6 +89,11 @@
       vertical-align: center;
       text-align: center;
       padding: 5px;
+      div {
+        background-color: $rlblue;
+        font-size: 13px;
+        padding: 4px;
+      }
     }
   }
   .week {
@@ -164,13 +169,16 @@
     margin: auto;
     margin-top: 20px;
   }
-  .calendar .days {
-    tr > td {
-      height: 75px;
-      width: 100px;
-      vertical-align: top;
-      text-align: left;
-      padding: 5px;
+  .calendar {
+    padding-bottom: 60px;
+    .days {
+      tr > td {
+        height: 75px;
+        width: 100px;
+        vertical-align: top;
+        text-align: left;
+        padding: 5px;
+      }
     }
   }
 }

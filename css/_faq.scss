@@ -1,1 +1,56 @@
 @import "variables";
+
+.faq {
+  .questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 90%;
+      margin: 10px 0px 10px 0px;
+      h3 {
+        font-family: $sfont;
+        font-size: 20px;
+      }
+      p {
+        font-family: $sfont;
+        font-size: 15px;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 436px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .faq {
+    .heading {
+      margin: 20px 0px 50px 0px;
+    }
+    .questions {
+      div {
+        margin: 10px 0px 10px 0px;
+        h3 {
+          font-family: $sfont;
+          font-size: 23px;
+        }
+        p {
+          font-family: $sfont;
+          font-size: 15px;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}

@@ -23,9 +23,7 @@
 body {
   background-color: $white;
   .foot {
-    //width: 100%;
-    //justify-content: center;
-    height: 100%;
+    margin-top: auto;
   }
 }
 
@@ -34,6 +32,7 @@ textarea {
 }
 
 #services {
+  margin-bottom: 20px;
   .row-m {
     justify-content: center;
   }
@@ -94,9 +93,10 @@ textarea {
     color: $white;
   }
   p {
-    font-size: 17px;
+    font-size: 16px;
     font-family: $sfont;
     color: $grey;
+    padding: 5px;
     margin-top: 3%;
   }
 }

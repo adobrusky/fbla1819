@@ -67,6 +67,7 @@ function modal() {
   });
   $('.modalform i').click(function() {
      $('.modal').fadeOut();
+     $('body').css('overflow', 'auto');
   });
 };
 
@@ -76,6 +77,7 @@ function schedule() {
   scheduled.append('<div>' + selected + '</div>');
   setTimeout(function () {
     $('.modal').fadeOut();
+    $('body').css('overflow', 'auto');
   }, 2000);
 };
 

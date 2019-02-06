@@ -93,6 +93,7 @@
         background-color: $rlblue;
         font-size: 13px;
         padding: 4px;
+        display: none;
       }
     }
   }
@@ -168,6 +169,9 @@
   .schedule {
     margin: auto;
     margin-top: 20px;
+  }
+  .calendar .days tr>td div {
+    display: block;
   }
   .calendar {
     padding-bottom: 60px;

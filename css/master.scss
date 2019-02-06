@@ -29,6 +29,10 @@ body {
   }
 }
 
+textarea {
+  resize: none;
+}
+
 #services {
   .row-m {
     justify-content: center;

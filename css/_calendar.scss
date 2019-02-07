@@ -39,9 +39,11 @@
         width: 50%;
         height: 25px;
         font-size: 17px;
+        border: none;
         font-family: $sfont;
         margin: 5px;
-        border-radius: 5px 5px;
+        color: $ddgrey;
+        background-color: $lgrey;
       }
       button {
         font-family: $sfont;
@@ -89,6 +91,7 @@
       vertical-align: center;
       text-align: center;
       padding: 5px;
+      cursor: pointer;
       div {
         background-color: $rlblue;
         font-size: 13px;

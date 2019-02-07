@@ -25,6 +25,7 @@ var m = date.getMonth();
 var today = date.getDay();
 var j = 1;
 var scheduled;
+var isScheduled = false;
 
 function monthChange(month) {
   $('.month').html(monthName[month]);
@@ -59,7 +60,7 @@ function monthChange(month) {
 
 function modal() {
   $('.days > tbody > tr > td').click(function() {
-    if($(this).html() !== ' ') {
+    if($(this).html() !== ' ' && isScheduled === false) {
       $('.modal').fadeIn();
       $('body').css('overflow', 'hidden');
       scheduled = $(this);
@@ -75,6 +76,7 @@ function schedule() {
   var selected = $('#times option:selected').text();
   $('.modalform').html('<p>Thank you for choosing Accuracy</p>');
   scheduled.append('<div>' + selected + '</div>');
+  isScheduled = true;
   setTimeout(function () {
     $('.modal').fadeOut();
     $('body').css('overflow', 'auto');

@@ -83,6 +83,13 @@ function schedule() {
   }, 2000);
 };
 
+function redirect() {
+  $('.contact').html('<h4>Thank you for contacting us. You will be redirected to the homepage</h4>');
+  setTimeout(function () {
+    window.location.href = "http://accuracy.services";
+  }, 3000);
+};
+
 $(document).ready(function() {
   monthChange(m);
   modal();

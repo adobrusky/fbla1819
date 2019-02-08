@@ -4,6 +4,12 @@
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  h4 {
+    font-family: $sfont;
+    font-size: 15px;
+    color: $black;
+    text-align: center;
+  }
   .info {
     display: flex;
     flex-direction: column;
@@ -32,6 +38,16 @@
     background-color: $lgrey;
     resize: none;
   }
+  button {
+    font-family: $sfont;
+    background-color: $lblue;
+    color: $white;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 5px 5px;
+  }
 }
 
 @media only screen and (min-width: 436px) {
@@ -56,9 +72,46 @@
 }
 
 @media only screen and (min-width: 768px) {
-
+  .contact {
+    h4 {
+      font-size: 25px;
+    }
+    .info {
+      width: 500px;
+      flex-direction: row;
+      justify-content: space-between;
+      input {
+        margin-top: 10px;
+        flex-basis: 50%;
+        max-width: 245px;
+      }
+    }
+    textarea {
+      height: 300px;
+      margin-top: 10px;
+      font-size: 17px;
+      width: 500px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-
+  .contact {
+    .info {
+      width: 800px;
+      flex-direction: row;
+      justify-content: space-between;
+      input {
+        margin-top: 10px;
+        flex-basis: 50%;
+        max-width: 395px;
+      }
+    }
+    textarea {
+      height: 300px;
+      margin-top: 10px;
+      font-size: 17px;
+      width: 800px;
+    }
+  }
 }

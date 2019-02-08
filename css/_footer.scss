@@ -28,6 +28,10 @@
     p {
       font-family: $sfont;
       font-size: 15px;
+      a {
+        color: white;
+        text-decoration: underline;
+      }
     }
     .social i {
       padding: 20px 5px 0px 5px;

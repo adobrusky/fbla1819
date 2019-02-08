@@ -7,7 +7,7 @@ var carouselDirection = 'right'; //Accepts right or left
 var carouselFade = 200;
 var dropSpeed = 400;
 
-
+//Landing page fading down animation
 function fadeDown() {
   $('.fade-down').css({'top':'0px','opacity':'1'});
 };
@@ -20,6 +20,7 @@ var march = [ ' ', ' ', ' ', ' ', ' ', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 var april = [ ' ', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, ' ', ' ', ' ', ' '];
 var may = [ ' ', '  ', ' ', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, ' ', ' '];
 
+//Variables for the calendar changing
 var date = new Date();
 var m = date.getMonth();
 var today = date.getDay();
@@ -27,6 +28,7 @@ var j = 1;
 var scheduled;
 var isScheduled = false;
 
+//Function uses current month to determine which array of numbers to load
 function monthChange(month) {
   $('.month').html(monthName[month]);
   for(var i = 0; i < 5; i++) {
@@ -58,6 +60,7 @@ function monthChange(month) {
   }
 };
 
+//Functions opens the scheduling modal when clicking on an appropriate date
 function modal() {
   $('.days > tbody > tr > td').click(function() {
     if($(this).html() !== ' ' && isScheduled === false) {
@@ -72,6 +75,7 @@ function modal() {
   });
 };
 
+//Function submits the scheduling and puts the time into the calendar
 function schedule() {
   var selected = $('#times option:selected').text();
   $('.modalform').html('<p>Thank you for choosing Accuracy</p>');
@@ -83,6 +87,7 @@ function schedule() {
   }, 2000);
 };
 
+//Redirects the user to the homepage after contacting
 function redirect() {
   $('.contact').html('<h4>Thank you for contacting us. You will be redirected to the homepage</h4>');
   setTimeout(function () {
